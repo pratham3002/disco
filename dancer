@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Button Example</title>
+  </head>
+  <body>
+    <input type="text" id="input-box" value="Some data to be cleared">
+    <br>
+    <button onclick="clearData()">Clear Data</button>
+
+    <script>
+      function clearData() {
+        document.getElementById("input-box").value = "";
+        alert("Data saved successfully!");
+      }
+    </script>
+  </body>
+</html>
