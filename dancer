@@ -17,3 +17,28 @@
     </script>
   </body>
 </html>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Remove Data from Input Boxes</title>
+</head>
+
+<body>
+    <input type="text" class="input-box" value="Input Box 1"><br>
+    <input type="text" class="input-box" value="Input Box 2"><br>
+    <input type="text" class="input-box" value="Input Box 3"><br>
+    <button onclick="removeData()">Remove Data</button>
+
+    <script>
+        function removeData() {
+            var inputBoxes = document.getElementsByClassName("input-box");
+            for (var i = 0; i < inputBoxes.length; i++) {
+                inputBoxes[i].value = "";
+            }
+            alert("Data saved successfully.");
+        }
+    </script>
+</body>
+
+</html>
